@@ -1,0 +1,55 @@
+#btnEdit.button {
+
+    -fx-padding: 3 15 3 15;
+    -fx-background-image: url("icons/edit.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#btnDelete.button {
+
+    -fx-padding: 3 15 3 15;
+    -fx-background-image: url("icons/delete.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#btnShow.button {
+
+
+    -fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+
+}
+
+#btnLogout.button {
+    -fx-padding: 3 15 3 15;
+    -fx-background-image: url("icons/logout.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 12 center;
+}
+
+
+
+.required {
+    -fx-border-color: "#c44d56";
+    -fx-prompt-text-fill: "#c44d56";
+}
+
+.hidePassword{
+-fx-control-inner-background: "#000";
+-fx-text-fill: "#000";
+}
+
+.showPasswordIcon{
+    -fx-background-image: url("icons/show.png");
+}
+.hidePasswordIcon{
+    -fx-background-image: url("icons/hide.png");
+}

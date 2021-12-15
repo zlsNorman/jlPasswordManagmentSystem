@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jlingott.jlpasswordmanagmentsystem.guiController.CreateUserUiController">
+    <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox spacing="10.0">
+         <children>
+            <Label text="Benutzername" />
+            <TextField fx:id="txtUsername" />
+            <VBox>
+               <children>
+                  <Label fx:id="lblError" textFill="#da1111" />
+               </children>
+            </VBox>
+            <Label text="Passwort" />
+            <PasswordField fx:id="txtPassword" />
+            <Label text="Passwort wiederholen" />
+            <PasswordField fx:id="txtCheckPassword" />
+            <Button mnemonicParsing="false" onAction="#saveUser" text="Benutzer erstellen" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

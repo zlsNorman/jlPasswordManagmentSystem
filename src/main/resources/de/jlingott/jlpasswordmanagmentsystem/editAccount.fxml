@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jlingott.jlpasswordmanagmentsystem.guiController.EditAccountUiController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox spacing="10.0">
+         <children>
+            <Label text="ID" />
+            <TextField fx:id="txtId" disable="true" editable="false" />
+            <Label text="Titel*" />
+            <TextField fx:id="txtTitle" />
+            <Label text="Benutzername*" />
+            <TextField fx:id="txtUsername" />
+            <Label text="Passwort*" />
+            <VBox spacing="2.0">
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="txtPassword" alignment="BASELINE_LEFT" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="btnShow" mnemonicParsing="false" onAction="#togglePasswordView" prefHeight="25.0" prefWidth="52.0" />
+                     </children>
+                  </HBox>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#copyToClipboard" text="In Zwischenablage Kopieren" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label text="Url" />
+            <TextField fx:id="txtUrl" />
+            <Label text="Notiz" />
+            <TextArea fx:id="txtAreaNote" prefHeight="200.0" prefWidth="200.0" />
+            <Label fx:id="lblRequiredFields" text="Pflichtfelder*" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="btnEditAccount" mnemonicParsing="false" onAction="#editAccount" text="Ändern" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
