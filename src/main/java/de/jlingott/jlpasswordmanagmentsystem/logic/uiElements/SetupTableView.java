@@ -23,8 +23,8 @@ public class SetupTableView {
         mainViewElements.colTitle.setCellValueFactory(new PropertyValueFactory<>("strAccountTitle"));
         mainViewElements.colUsername.setCellValueFactory(new PropertyValueFactory<>("strAccountUsername"));
         mainViewElements.colPassword.setCellValueFactory(new PropertyValueFactory<>("strPasswordCensored"));
-        mainViewElements.colUrl.setCellValueFactory(new PropertyValueFactory<>("strAccountNote"));
-        mainViewElements.colNote.setCellValueFactory(new PropertyValueFactory<>("strAccountUrl"));
+        mainViewElements.colUrl.setCellValueFactory(new PropertyValueFactory<>("strAccountUrl"));
+        mainViewElements.colNote.setCellValueFactory(new PropertyValueFactory<>("strAccountNote"));
         mainViewElements.colBtnEdit.setCellValueFactory(new PropertyValueFactory<>("btnEdit"));
         mainViewElements.colBtnDelete.setCellValueFactory(new PropertyValueFactory<>("btnDelete"));
 

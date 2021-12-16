@@ -56,6 +56,7 @@ public class LoginUiController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         createUserStage = new Stage();
     }
 
@@ -70,7 +71,9 @@ public class LoginUiController implements Initializable {
         String strUsername = txtUsername.getText();
         String strEncryptPassword = setEncryptPassword();
 
+        System.out.println(checkLogin(strUsername, strEncryptPassword));
         if (checkLogin(strUsername, strEncryptPassword)) {
+
             try {
                 goToMainView();
             } catch (IOException e) {
@@ -78,7 +81,7 @@ public class LoginUiController implements Initializable {
                 //Setzt den ErrorText für den User
                 txtError.setText(AppTexts.JUMP_TO_MAIN_VIEW_FAILED);
             }
-        } else {
+        }else {
 
             txtError.setText(AppTexts.USER_DOSNT_EXIST);
         }

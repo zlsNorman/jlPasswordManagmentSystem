@@ -17,6 +17,7 @@ public class AppTexts {
     //region Textfield Errors
     public static final String USER_DOSNT_EXIST = "Dieser Benutzer existiert nicht,\n" +
             "stellen Sie sicher das ihre eingaben korrekt sind.";
+    public static final String DATABASE_OFFLINE = "Datenbank Offline";
     public static final String PASSWORT_NEEDS_TO_BE_EQUAl = "Passwörter müssen übereinstimmen";
     public static final String JUMP_TO_MAIN_VIEW_FAILED = "Verbindung mit der Main-View konnte nicht hergestellt werden";
 
